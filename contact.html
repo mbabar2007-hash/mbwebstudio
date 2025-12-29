@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= Splash Screen ================= -->
+<div id="splash">
+  <img src="logo.png" alt="MB WEB STUDIO Logo">
+</div>
+<!-- ================= End Splash Screen ================= -->
+
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <img src="logo1.png" alt="Logo">
+    </a>
+
+    <div id="hamburger" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="navLinks" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+  </div>
+</nav>
+<!-- ================= End NAVBAR ================= -->
+
+<!-- ================= Hero Section ================= -->
+<section class="hero">
+  <h1>Contact Us</h1>
+  <p>Get in touch with us for a free consultation or project inquiry.</p>
+
+  <div class="hero-buttons">
+    <a href="contact.html" class="btn primary">Get a Free Quote</a>
+    <a href="work.html" class="btn secondary">View Our Work</a>
+  </div>
+</section>
+<!-- ================= End Hero Section ================= -->
+
+<!-- ================= Contact Section ================= -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-header">
+      <h2>Get in Touch</h2>
+      <p>Have a question? We'd love to hear from you.</p>
+    </div>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>Email</h3>
+        <p>mbwebstudio56@gmail.com</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Phone</h3>
+        <p>+1 (289) 928-5220</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Location</h3>
+        <p>Bowmanville, ON, Canada</p>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <div class="form-content">
+
+        <!-- ===== NETLIFY FORM ===== -->
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html"
+        >
+          <input type="hidden" name="form-name" value="contact">
+
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" required>
+
+          <textarea name="message" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="submit-btn">
+            Send Message
+          </button>
+        </form>
+        <!-- ===== END NETLIFY FORM ===== -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ================= End Contact Section ================= -->
+
+<!-- ================= Footer ================= -->
+<footer class="footer-section">
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <img src="logo.png" alt="MB WEB STUDIO Logo">
+      <span>MB WEB STUDIO</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Email: mbwebstudio56@gmail.com</p>
+      <p>Phone: +1 (289) 928-5220</p>
+      <p>Bowmanville, ON, Canada</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://wa.me/message/TLO2L6OHQDHRO1" target="_blank">
+        <img src="whatsapp1.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/mbwebstudio56" target="_blank">
+        <img src="insta.png" alt="Instagram">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MB WEB STUDIO. All rights reserved.</p>
+  </div>
+</footer>
+<!-- ================= End Footer ================= -->
+
+<script src="script.js"></script>
+</body>
+</html>
