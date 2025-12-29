@@ -55,27 +55,6 @@ window.addEventListener('scroll', showCardsOnScroll, { passive: true });
 window.addEventListener('resize', showCardsOnScroll);
 window.addEventListener('load', showCardsOnScroll);
 
-// ================= Form Submission Handler =================
-const form = document.querySelector('form');
-const formContent = document.getElementById('formContent');
-const successMessage = document.getElementById('successMessage');
-
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    setTimeout(() => {
-      formContent?.classList.add('hide');
-      successMessage?.classList.add('show');
-
-      setTimeout(() => {
-        formContent?.classList.remove('hide');
-        successMessage?.classList.remove('show');
-        form.reset();
-      }, 5000);
-    }, 500);
-  });
-}
 
 // ================= Hamburger Menu =================
 const hamburger = document.getElementById('hamburger');
